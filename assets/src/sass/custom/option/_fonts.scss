@@ -1,0 +1,97 @@
+// Global Variables
+@import "../../plugin/option/variables";
+@import "../../plugin/option/variables_bootstrap";
+
+// Global Mixin
+@import "../../plugin/option/mixin";
+
+// https://google-webfonts-helper.herokuapp.com/fonts
+
+
+
+// https://www.font-converter.net/en
+
+@font-face {
+  font-family: "Semplicita-Light";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("#{$path-fonts-url}/semplicita/SemplicitaLight.eot"); /* IE9 Compat Modes */
+  src: url("#{$path-fonts-url}/semplicita/SemplicitaLight.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("#{$path-fonts-url}/semplicita/SemplicitaLight.otf") format("opentype"), /* Open Type Font */
+  url("#{$path-fonts-url}/semplicita/SemplicitaLight.svg") format("svg"), /* Legacy iOS */
+  url("#{$path-fonts-url}/semplicita/SemplicitaLight.ttf") format("truetype"), /* Safari, Android, iOS */
+  url("#{$path-fonts-url}/semplicita/SemplicitaLight.woff") format("woff"), /* Modern Browsers */
+  url("#{$path-fonts-url}/semplicita/SemplicitaLight.woff2") format("woff2"); /* Modern Browsers */
+}
+
+@font-face {
+  font-family: "Semplicita-LightItalic";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("#{$path-fonts-url}/semplicita/SemplicitaLightItalic.eot"); /* IE9 Compat Modes */
+  src: url("#{$path-fonts-url}/semplicita/SemplicitaLightItalic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("#{$path-fonts-url}/semplicita/SemplicitaLightItalic.otf") format("opentype"), /* Open Type Font */
+  url("#{$path-fonts-url}/semplicita/SemplicitaLightItalic.svg") format("svg"), /* Legacy iOS */
+  url("#{$path-fonts-url}/semplicita/SemplicitaLightItalic.ttf") format("truetype"), /* Safari, Android, iOS */
+  url("#{$path-fonts-url}/semplicita/SemplicitaLightItalic.woff") format("woff"), /* Modern Browsers */
+  url("#{$path-fonts-url}/semplicita/SemplicitaLightItalic.woff2") format("woff2"); /* Modern Browsers */
+}
+
+@font-face {
+  font-family: "Semplicita-Medium";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("#{$path-fonts-url}/semplicita/SemplicitaMedium.eot"); /* IE9 Compat Modes */
+  src: url("#{$path-fonts-url}/semplicita/SemplicitaMedium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("#{$path-fonts-url}/semplicita/SemplicitaMedium.otf") format("opentype"), /* Open Type Font */
+  url("#{$path-fonts-url}/semplicita/SemplicitaMedium.svg") format("svg"), /* Legacy iOS */
+  url("#{$path-fonts-url}/semplicita/SemplicitaMedium.ttf") format("truetype"), /* Safari, Android, iOS */
+  url("#{$path-fonts-url}/semplicita/SemplicitaMedium.woff") format("woff"), /* Modern Browsers */
+  url("#{$path-fonts-url}/semplicita/SemplicitaMedium.woff2") format("woff2"); /* Modern Browsers */
+}
+
+
+@font-face {
+  font-family: "Semplicita-Bold";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("#{$path-fonts-url}/semplicita/SemplicitaBold.eot"); /* IE9 Compat Modes */
+  src: url("#{$path-fonts-url}/semplicita/SemplicitaBold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("#{$path-fonts-url}/semplicita/SemplicitaBold.otf") format("opentype"), /* Open Type Font */
+  url("#{$path-fonts-url}/semplicita/SemplicitaBold.svg") format("svg"), /* Legacy iOS */
+  url("#{$path-fonts-url}/semplicita/SemplicitaBold.ttf") format("truetype"), /* Safari, Android, iOS */
+  url("#{$path-fonts-url}/semplicita/SemplicitaBold.woff") format("woff"), /* Modern Browsers */
+  url("#{$path-fonts-url}/semplicita/SemplicitaBold.woff2") format("woff2"); /* Modern Browsers */
+}
+
+@font-face {
+  font-family: "Semplicita-BoldItalic";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("#{$path-fonts-url}/semplicita/SemplicitaBoldItalic.eot"); /* IE9 Compat Modes */
+  src: url("#{$path-fonts-url}/semplicita/SemplicitaBoldItalic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("#{$path-fonts-url}/semplicita/SemplicitaBoldItalic.otf") format("opentype"), /* Open Type Font */
+  url("#{$path-fonts-url}/semplicita/SemplicitaBoldItalic.svg") format("svg"), /* Legacy iOS */
+  url("#{$path-fonts-url}/semplicita/SemplicitaBoldItalic.ttf") format("truetype"), /* Safari, Android, iOS */
+  url("#{$path-fonts-url}/semplicita/SemplicitaBoldItalic.woff") format("woff"), /* Modern Browsers */
+  url("#{$path-fonts-url}/semplicita/SemplicitaBoldItalic.woff2") format("woff2"); /* Modern Browsers */
+}
+
+@font-face {
+  font-family: "Semplicita-Ombra";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("#{$path-fonts-url}/semplicita/SemplicitaOmbra.eot"); /* IE9 Compat Modes */
+  src: url("#{$path-fonts-url}/semplicita/SemplicitaOmbra.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("#{$path-fonts-url}/semplicita/SemplicitaOmbra.otf") format("opentype"), /* Open Type Font */
+  url("#{$path-fonts-url}/semplicita/SemplicitaOmbra.svg") format("svg"), /* Legacy iOS */
+  url("#{$path-fonts-url}/semplicita/SemplicitaOmbra.ttf") format("truetype"), /* Safari, Android, iOS */
+  url("#{$path-fonts-url}/semplicita/SemplicitaOmbra.woff") format("woff"), /* Modern Browsers */
+  url("#{$path-fonts-url}/semplicita/SemplicitaOmbra.woff2") format("woff2"); /* Modern Browsers */
+}

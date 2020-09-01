@@ -1,0 +1,5 @@
+.sitetitle{}
+
+@media print{
+  .sitetitle *{color: $global-clr-text-dark !important;}
+}
