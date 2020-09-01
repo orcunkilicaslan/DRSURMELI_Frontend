@@ -1,4 +1,23 @@
-// Site Font Set
+// Site Font Family Set
+$site-custom-font-family: ();
+$site-custom-font-family: map-merge(
+                (
+                        "light":        $global-font-family-semplicita-lgh,
+                        "lightitalic":  $global-font-family-semplicita-lgh-ita,
+                        "medium":       $global-font-family-semplicita-medi,
+                        "bold":         $global-font-family-semplicita-bold,
+                        "bolditalic":   $global-font-family-semplicita-bold-ita,
+                        "ombra":        $global-font-family-semplicita-ombr
+                ),
+                $site-custom-font-family
+);
+
+@each $fontfamily, $value in $site-custom-font-family {
+  .sitefontfamily#{$fontfamily}{font-family: $value !important;}
+}
+
+
+// Site Font Size Set
 $site-default-font-size: ();
 $site-default-font-size: map-merge(
                 (
@@ -16,7 +35,6 @@ $site-default-font-size: map-merge(
                 ),
                 $site-default-font-size
 );
-
 
 @each $fontsize, $value in $site-default-font-size {
   .sitefontsize#{$fontsize}{font-size: $value !important;}

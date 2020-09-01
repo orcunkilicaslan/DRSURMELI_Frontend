@@ -1,19 +1,20 @@
 
-/* Custom Owl Class
-$('.customowlclass').owlCarousel({
-    loop:true,
-    nav:true,
-    dots:false,
-    autoplay:true,
-    autoplayTimeout:2000,
-    autoplayHoverPause:true,
-    autoWidth:false,
-    items:5,
-    margin:0,
-    mouseDrag:false,
+
+/* Head Home Slider */
+$('.headsliderowl').owlCarousel({
+    loop: true,
+    nav: false,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 10000,
+    autoplayHoverPause: false,
+    items: 1,
+    margin: 0,
+    autoWidth: false,
+    mouseDrag: true,
     animateIn: 'fadeInUp',
     animateOut: 'fadeOutUp',
-    responsiveClass:true,
+    responsiveClass: true,
     responsive:{
         0:{},
         819:{},
@@ -23,4 +24,4 @@ $('.customowlclass').owlCarousel({
         1939:{}
     }
 });
-/* Custom Owl Class */
+/* Head Home Slider */

@@ -1,0 +1,42 @@
+
+/* Components Variables Settings */
+$navmenu-clr:                     $global-clr-white;
+$navmenu-headfontsize:            1rem;
+$navmenu-headfontweight:          $var-custom-font-weight-bold;
+$navmenu-headborderclr:           $global-clr-white;
+$navmenu-headbgclr:               $navmenu-headborderclr;
+/* Components Variables Settings */
+
+.headnavigation{
+
+  &-navmenu{
+    color: $navmenu-clr;
+    font-size: $navmenu-headfontsize;
+    font-weight: $navmenu-headfontweight;
+    letter-spacing: calc(#{$navmenu-headfontsize} / 10);
+    padding: 0;
+    border-top: 1px solid transparentize($navmenu-headborderclr, 0.5);
+    border-bottom: 1px solid transparentize($navmenu-headborderclr, 0.5);
+
+    a{
+      text-decoration: none;
+    }
+
+    &-list{
+      @include flexbox-display-flex();
+      @include flexbox-justify-content(center);
+      background-color: transparentize($navmenu-headbgclr, 0.9);
+      margin: 0;
+      padding: 10px 0;
+
+      > li{
+        padding-left: 15px;
+        padding-right: 15px;
+
+        > a{
+          color: $navmenu-clr;
+        }
+      }
+    }
+  }
+}

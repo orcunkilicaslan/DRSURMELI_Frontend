@@ -1,2 +1,21 @@
 
-.home{}
+.home{
+
+  &-ourgoal{
+    background-color: $site-section-bgclr-blue;
+    padding: 60px 0;
+
+    .sitetitle-xl{
+      padding-bottom: 40px;
+    }
+
+    &-cont{
+      .sitecontent-desc{
+        padding-right: 100px;
+      }
+    }
+
+    &-img{}
+  }
+
+}
