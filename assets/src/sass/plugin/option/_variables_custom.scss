@@ -34,9 +34,9 @@ $var-custom-line-height-lg:                       1.5;
 $var-custom-line-height-sm:                       1.5;
 $var-custom-border-width:                         1px;
 $var-custom-border-color:                         $var-custom-clr-gray-300;
-$var-custom-border-radius:                        .25rem;
-$var-custom-border-radius-lg:                     .3rem;
-$var-custom-border-radius-sm:                     .2rem;
+$var-custom-border-radius:                        0rem;
+$var-custom-border-radius-lg:                     0rem;
+$var-custom-border-radius-sm:                     0rem;
 $var-custom-rounded-pill:                         50rem;
 $var-custom-box-shadow-sm:                        0 .125rem .25rem rgba($var-custom-clr-black, .075);
 $var-custom-box-shadow:                           0 .5rem 1rem rgba($var-custom-clr-black, .15);
@@ -85,6 +85,7 @@ $var-custom-input-btn-line-height:                1.65;
 $var-custom-input-btn-line-height-sm:             1.67;
 $var-custom-input-btn-line-height-lg:             1.59;
 $var-custom-input-btn-focus-width:                0rem;
+$var-custom-btn-font-weight:                      400;
 /* Site Custom Button Settings */
 
 /* Site Custom Form Settings */

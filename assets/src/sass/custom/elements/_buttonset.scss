@@ -1,5 +1,7 @@
 .btn{
   white-space: nowrap;
+  font-family: $global-font-family-semplicita-medi;
+  letter-spacing: 1px;
 
   &:focus{@include box-shadow(none !important);}
   &:hover{@include box-shadow(none !important);}

@@ -7,23 +7,35 @@
 
   &-top{
     padding: 20px 0;
+    @include transition-multiple(padding 0.3s ease-in-out);
 
     &-logoarea{
       @include flexbox-flex-order(2);
       width: 220px;
       text-align: center;
+      @include transition-multiple(width 0.3s ease-in-out);
 
       a{
         display: block;
+        height: 140px;
+        overflow: hidden;
+        @include transition-multiple(height 0.3s ease-in-out);
 
         svg{
+          width: 100%;
+          height: auto;
+
           path.signature{
             fill: $global-clr-white;
             stroke: transparent;
+            @include translateY(5px);
+            @include transition-multiple(transform 0.3s ease-in-out);
           }
           path.title{
             fill: $global-clr-white;
             stroke: $global-clr-white;
+            @include translate(7px, 110px);
+            @include transition-multiple(transform 0.3s ease-in-out);
           }
         }
       }
@@ -64,5 +76,26 @@
 
   &.headscroll{
     background-color: $site-section-bgclr-blue;
+
+    #{$headerclassname}-top{
+      padding: 10px 0;
+
+      &-logoarea{
+        //width: 140px;
+
+        a{
+          height: 40px;
+
+          svg{
+            path.signature{
+              @include translateY(50px);
+            }
+            path.title{
+              @include translate(6px, 6px);
+            }
+          }
+        }
+      }
+    }
   }
 }

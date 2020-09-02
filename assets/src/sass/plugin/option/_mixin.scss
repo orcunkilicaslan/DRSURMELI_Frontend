@@ -361,12 +361,12 @@
   -khtml-backdrop-filter: $backdrop-filter-multi;
 }
 
-@mixin svg-filter($brightness: 100%, $invert: 0%, $hue: 0, $contrast: 100%, $grayscale: 0%,) {
-  filter: brightness($brightness) invert($invert) hue-rotate(#{$hue}deg) contrast($contrast) grayscale($grayscale);
-  -webkit-filter: brightness($brightness) invert($invert) hue-rotate(#{$hue}deg) contrast($contrast) grayscale($grayscale);
-  -ms-filter: brightness($brightness) invert($invert) hue-rotate(#{$hue}deg) contrast($contrast) grayscale($grayscale);
-  -o-filter: brightness($brightness) invert($invert) hue-rotate(#{$hue}deg) contrast($contrast) grayscale($grayscale);
-  -moz-filter: brightness($brightness) invert($invert) hue-rotate(#{$hue}deg) contrast($contrast) grayscale($grayscale);
+@mixin svg-filter($brightness: 100%, $invert: 0%, $hue: 0, $contrast: 100%, $grayscale: 0%, $opacity: 100%,) {
+  filter: brightness($brightness) invert($invert) hue-rotate(#{$hue}deg) contrast($contrast) grayscale($grayscale) opacity($opacity);
+  -webkit-filter: brightness($brightness) invert($invert) hue-rotate(#{$hue}deg) contrast($contrast) grayscale($grayscale) opacity($opacity);
+  -ms-filter: brightness($brightness) invert($invert) hue-rotate(#{$hue}deg) contrast($contrast) grayscale($grayscale) opacity($opacity);
+  -o-filter: brightness($brightness) invert($invert) hue-rotate(#{$hue}deg) contrast($contrast) grayscale($grayscale) opacity($opacity);
+  -moz-filter: brightness($brightness) invert($invert) hue-rotate(#{$hue}deg) contrast($contrast) grayscale($grayscale) opacity($opacity);
 }
 /* Background End */
 
