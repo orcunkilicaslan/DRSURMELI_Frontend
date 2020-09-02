@@ -107,4 +107,61 @@
     }
   }
 
+  &-doctornote{
+    background-color: $var-custom-body-bg;
+    padding: 60px 0;
+
+    .sitetitle-md{
+      padding-bottom: 40px;
+    }
+
+    .quotearea{
+      padding: 0 50px;
+
+      &-quote{
+        color: $global-clr-text-dark;
+        padding: 10px 50px;
+        font-size: 1.5rem;
+        font-weight: $var-custom-font-weight-bold;
+        letter-spacing: 1px;
+        text-align: center;
+        position: relative;
+
+        &::before,
+        &::after{
+          content: "";
+          background-image: url("data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FwYV8xIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0MDkuMjk0IDQwOS4yOTQiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgNDA5LjI5NCA0MDkuMjk0IiB3aWR0aD0iNTEyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im0wIDIwNC42NDd2MTc1LjQxMmgxNzUuNDEydi0xNzUuNDEyaC0xMTYuOTQxYzAtNjQuNDggNTIuNDYxLTExNi45NDEgMTE2Ljk0MS0xMTYuOTQxdi01OC40NzFjLTk2LjcyOCAwLTE3NS40MTIgNzguNjg0LTE3NS40MTIgMTc1LjQxMnoiLz48cGF0aCBkPSJtNDA5LjI5NCA4Ny43MDZ2LTU4LjQ3MWMtOTYuNzI4IDAtMTc1LjQxMiA3OC42ODQtMTc1LjQxMiAxNzUuNDEydjE3NS40MTJoMTc1LjQxMnYtMTc1LjQxMmgtMTE2Ljk0MWMwLTY0LjQ4IDUyLjQ2MS0xMTYuOTQxIDExNi45NDEtMTE2Ljk0MXoiLz48L3N2Zz4=");
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 30px;
+          height: 30px;
+          position: absolute;
+          opacity: 0.5;
+        }
+
+        &::before{
+          left: 0;
+          top: 0;
+        }
+
+        &::after{
+          right: 0;
+          bottom: 0;
+          @include rotate(180);
+        }
+      }
+
+      &-title{
+        padding: 30px 50px 0;
+
+        h5,h6{
+          color: $global-clr-text-dark;
+          font-size: 1.5rem;
+          letter-spacing: 1px;
+          text-align: right;
+          margin: 0;
+        }
+      }
+    }
+  }
 }
