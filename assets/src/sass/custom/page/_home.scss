@@ -90,7 +90,21 @@
         }
       }
     }
+  }
 
+  &-demonstration{
+    background-color: $var-custom-body-bg;
+    padding-top: 60px;
+
+    .sitetitle-xl{
+      padding-bottom: 40px;
+    }
+
+    .threedemonstration{
+      background-color: $site-section-bgclr-black;
+      padding: 50px 0;
+      text-align: center;
+    }
   }
 
 }
