@@ -1,0 +1,27 @@
+
+.component{
+  &-followinsta{
+    background-color: $var-custom-body-bg;
+    padding: 60px 0;
+
+    .sitetitle-xl{
+      padding-bottom: 30px;
+    }
+
+    .instaimg{
+      @include flexbox-display-flex();
+      @include flexbox-flex-wrap(wrap);
+
+      li{
+        @include flexbox-flex-basis(0);
+        @include flexbox-flex-grow(1);
+        min-width: 0;
+        max-width: 100%;
+      }
+
+      &-box{
+        padding: 10px;
+      }
+    }
+  }
+}
