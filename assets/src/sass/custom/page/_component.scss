@@ -1,27 +1,178 @@
 
 .component{
+
   &-followinsta{
     background-color: $var-custom-body-bg;
-    padding: 60px 0;
+    padding: 100px 0;
 
     .sitetitle-xl{
       padding-bottom: 30px;
     }
 
     .instaimg{
-      @include flexbox-display-flex();
-      @include flexbox-flex-wrap(wrap);
 
-      li{
-        @include flexbox-flex-basis(0);
-        @include flexbox-flex-grow(1);
-        min-width: 0;
-        max-width: 100%;
+      ul{
+        @include flexbox-display-flex();
+        @include flexbox-flex-wrap(wrap);
+
+        li{
+          @include flexbox-flex-basis(0);
+          @include flexbox-flex-grow(1);
+          min-width: 0;
+          max-width: 100%;
+        }
       }
 
       &-box{
         padding: 10px;
       }
+    }
+  }
+
+  &-beforeaftergallery{
+    background-color: $var-custom-body-bg;
+    padding: 100px 0;
+
+    .sitetitle-xl{
+      padding-bottom: 30px;
+    }
+
+    .galleryimg{
+
+      ul{
+        @include flexbox-display-flex();
+        @include flexbox-flex-wrap(wrap);
+
+        li{
+          @include flexbox-flex-basis(0);
+          @include flexbox-flex-grow(1);
+          min-width: 0;
+          max-width: 100%;
+        }
+      }
+
+      &-box{
+        padding: 0 20px;
+      }
+    }
+  }
+
+  &-testimonial{
+    background-color: $var-custom-body-bg;
+    padding: 100px 0;
+
+    .sitetitle-xl{
+      padding-bottom: 30px;
+    }
+
+    .testimonialcomment{
+      padding-bottom: 40px;
+    }
+
+    .testimonialcommentowl{
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .owl{
+      &-stage{
+        &-outer{
+          z-index: 1;
+        }
+      }
+
+      &-item{
+        img{
+          width: auto;
+          margin: auto;
+        }
+      }
+
+      &-nav{
+        @include flexbox-display-flex();
+        @include flexbox-justify-content(space-between);
+        margin: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+
+        &.disabled{
+          @include flexbox-display-flex();
+        }
+
+        button[class*="owl-"]{
+          width: 15px;
+          margin: 0;
+          @include border-radius(0);
+          position: relative;
+          z-index: 1;
+
+          &::before{
+            content: "";
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOC44NDUiIGhlaWdodD0iMjguOTQ2IiB2aWV3Qm94PSIwIDAgMTguODQ1IDI4Ljk0NiI+DQogIDxwYXRoIGlkPSJQYXRoXzk0IiBkYXRhLW5hbWU9IlBhdGggOTQiIGQ9Ik0yOTMuMTM0LDkxLjQ5MmwtMTAtMTMuNTgxLDguOTc5LTEzLjU3NGExLDEsMCwwLDAsLjIzNC0uNmMwLS4yLS4xNTQtLjI5Mi0uNDY4LS4yOTJoLTcuMDQ2YTMuMzg4LDMuMzg4LDAsMCwwLS43ODUuMDc2LDEuMzcsMS4zNywwLDAsMC0uNjY2LjU0OGwtOC41NjIsMTMuMTU3YTEuMywxLjMsMCwwLDAtLjI3Ny42OTMsMS4xNjcsMS4xNjcsMCwwLDAsLjE0MS41NjhsOS41NjMsMTMuMDQ3YTIuMDI1LDIuMDI1LDAsMCwwLC41MDcuNjQyLDEuMTA4LDEuMTA4LDAsMCwwLC43MDYuMjE1aDcuNGMuNiwwLC42OS0uMy4yNzEtLjkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI5My4zOTEgOTIuMzg4KSByb3RhdGUoMTgwKSIgZmlsbD0iIzBlYWYzNCIvPg0KPC9zdmc+DQo=");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            width: 14px;
+            height: 14px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            @include translate(-50%, -50%);
+          }
+
+          &:hover{
+            background-color: transparent;
+          }
+
+          span{
+            text-indent: -9999px;
+            opacity: 0;
+          }
+        }
+
+        button[class*="-prev"]{
+          left: -40px;
+          &::before{
+            @include transform-multiple(translate(-50%, -50%) rotate(180deg));
+          }
+        }
+        button[class*="-next"]{
+          right: -40px;
+          &::before{
+            @include transform-multiple(translate(-50%, -50%) rotate(0deg));
+          }
+        }
+      }
+    }
+  }
+
+  &-contactus{
+    background-color: $var-custom-body-bg;
+    padding: 100px 0;
+
+    .sitetitle-xl{
+      padding-bottom: 30px;
+    }
+
+    .contactform{
+      max-width: 1000px;
+      margin: auto;
+      padding: 50px;
+      border: 1px solid $global-border-light-gray;
+
+      .form-row{
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &-fullsectionmaps{
+    iframe[src*="google"]{
+      width: 100%;
+      height: 600px;
+      border: 0;
     }
   }
 }

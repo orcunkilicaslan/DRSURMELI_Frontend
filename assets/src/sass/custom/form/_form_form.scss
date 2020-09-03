@@ -58,6 +58,8 @@
 
     &-control{
       &-label{
+        font-weight: $var-custom-font-weight-normal;
+
         &::before{}
         &::before,
         &::after{}

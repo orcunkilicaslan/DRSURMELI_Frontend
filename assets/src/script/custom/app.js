@@ -59,3 +59,54 @@ $('.homeproceduresowl').owlCarousel({
     }
 });
 /* Home Procedures */
+
+/* Before and After Gallery  */
+$('.beforeaftergalleryowl').owlCarousel({
+    loop: true,
+    nav: false,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 10000,
+    autoplayHoverPause: false,
+    items: 3,
+    margin: 0,
+    autoWidth: false,
+    mouseDrag: true,
+    animateIn: 'fadeInUp',
+    animateOut: 'fadeOutUp',
+    center: true,
+    responsiveClass: true,
+    responsive:{
+        0:{},
+        819:{},
+        1059:{},
+        1379:{},
+        1619:{},
+        1939:{}
+    }
+});
+/* Before and After Gallery  */
+
+/* Testimonial Comment Slider */
+$('.testimonialcommentowl').owlCarousel({
+    loop: true,
+    nav: true,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: false,
+    items: 1,
+    margin: 0,
+    autoWidth: false,
+    mouseDrag: true,
+    responsiveClass: true,
+    responsive:{
+        0:{},
+        819:{},
+        1059:{},
+        1379:{},
+        1619:{},
+        1939:{}
+    }
+});
+/* Testimonial Comment Slider */

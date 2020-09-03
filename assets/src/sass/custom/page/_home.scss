@@ -109,7 +109,7 @@
 
   &-doctornote{
     background-color: $var-custom-body-bg;
-    padding: 60px 0;
+    padding: 60px 0 0;
 
     .sitetitle-md{
       padding-bottom: 40px;
@@ -207,11 +207,62 @@
   }
 
   &-outoftown{
-    background-color: $var-custom-body-bg;
-    padding: 60px 0;
+    background-color: $site-section-bgclr-black;
+    background-image: url(#{$path-img-url}/section/home_outoftown.jpg);
+    padding: 100px 0;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    position: relative;
+
+    &::before{
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      @include background-linear(transparent, $global-clr-white, 0);
+    }
+
+    .container{
+      position: relative;
+    }
 
     .sitetitle-xl{
-      padding-bottom: 40px;
+      padding-bottom: 20px;
+
+      .bigtext{
+        font-size: 4.6rem;
+      }
     }
+
+    &-cont{
+      padding-left: 40%;
+
+      .sitecontent-desc{
+        background-color: transparentize($var-custom-body-bg, 0.25);
+        text-align: right;
+        padding: 50px;
+        @include backdrop-filter-multiple(blur(5px));
+
+        p{
+          font-weight: $var-custom-font-weight-bold;
+        }
+      }
+
+      &-btn{
+        text-align: right;
+        padding-top: 30px;
+      }
+    }
+  }
+
+  &-testimonial{
+    padding-top: 0;
+  }
+
+  &-contactus{
+    padding-top: 0;
   }
 }
