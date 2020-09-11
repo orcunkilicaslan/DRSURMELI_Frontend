@@ -11,14 +11,14 @@ $navmenu-headbgclr:               $navmenu-headborderclr;
 
   &-navmenu{
     @include flexbox-justify-content(center);
-    background-color: transparentize($navmenu-headbgclr, 0.9);
+    background-color: transparent;
     color: $navmenu-clr;
     font-size: $navmenu-headfontsize;
     font-weight: $navmenu-headfontweight;
     letter-spacing: calc(#{$navmenu-headfontsize} / 10);
     padding: 0;
-    border-top: 1px solid transparentize($navmenu-headborderclr, 0.5);
-    border-bottom: 1px solid transparentize($navmenu-headborderclr, 0.5);
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
 
     .navmenulist{
 
@@ -75,5 +75,21 @@ $navmenu-headbgclr:               $navmenu-headborderclr;
         }
       }
     }
+  }
+}
+
+
+
+#{$headerclassname}.headbiglogo{
+  .headnavigation-navmenu{
+    background-color: transparentize($navmenu-headbgclr, 0.9);
+    border-color: transparentize($navmenu-headborderclr, 0.5);
+  }
+}
+
+#{$headerclassname}.headsmalllogo{
+  .headnavigation-navmenu{
+    background-color: transparent;
+    border-color: transparentize($navmenu-headborderclr, 0.75);
   }
 }

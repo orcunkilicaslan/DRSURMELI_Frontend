@@ -6,7 +6,7 @@
   @include transition-multiple(background 0.15s ease-in-out);
 
   &-top{
-    padding: 20px 0;
+    padding: 18px 0;
     @include transition-multiple(padding 0.3s ease-in-out);
 
     &-logoarea{
@@ -17,7 +17,7 @@
 
       a{
         display: block;
-        height: 140px;
+        //height: 140px;
         overflow: hidden;
         @include transition-multiple(height 0.3s ease-in-out);
 
@@ -28,14 +28,27 @@
           path.signature{
             fill: $global-clr-white;
             stroke: transparent;
-            @include translateY(5px);
+            //@include translateY(5px);
             @include transition-multiple(transform 0.3s ease-in-out);
           }
           path.title{
             fill: $global-clr-white;
             stroke: $global-clr-white;
-            @include translate(7px, 110px);
+            //@include translate(7px, 110px);
             @include transition-multiple(transform 0.3s ease-in-out);
+          }
+        }
+      }
+
+      a{
+        height: 40px;
+
+        svg{
+          path.signature{
+            @include translateY(50px);
+          }
+          path.title{
+            @include translate(6px, 6px);
           }
         }
       }
@@ -74,6 +87,27 @@
 
   &-navigation{}
 
+  &.headbiglogo{
+    #{$headerclassname}-top-logoarea{
+      a{
+        height: 140px;
+
+        svg{
+          path.signature{
+            @include translateY(5px);
+          }
+          path.title{
+            @include translate(7px, 110px);
+          }
+        }
+      }
+    }
+  }
+
+  &.headsmalllogo{
+    background-color: $site-section-bgclr-blue;
+  }
+
   &.headscroll{
     background-color: $site-section-bgclr-blue;
 
@@ -81,7 +115,6 @@
       padding: 10px 0;
 
       &-logoarea{
-        //width: 140px;
 
         a{
           height: 40px;

@@ -2,6 +2,7 @@
 
 #### Web Public Area Frontend List
  - [Home_Page](https://orcunkilicaslan.github.io/DRSURMELI_Frontend/html/Home_Page.html)
+ - [Content_Page](https://orcunkilicaslan.github.io/DRSURMELI_Frontend/html/Content_Page.html)
    
 
 # NodeJS Kurulumu

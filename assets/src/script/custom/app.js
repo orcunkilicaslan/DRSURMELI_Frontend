@@ -1,4 +1,24 @@
 
+/* Header Class Added */
+$(document).ready(function() {
+    $(".headslider").parent().find(".header").addClass( "headbiglogo" );
+    $(".headtitle").parent().find(".header").addClass( "headsmalllogo" );
+});
+/* Header Class Added */
+
+/* HeadTitle Content Image */
+$(document).ready(function() {
+    var headtitlebannerimgitem = document.querySelectorAll(".headtitlebannerimg");
+    for (var i = 0; i < headtitlebannerimgitem.length; i++) {
+        headtitlebannerimgitem[i].style.backgroundImage     = "url('" + headtitlebannerimgitem[i].getAttribute('data-img-url') + "')";
+        headtitlebannerimgitem[i].style.backgroundSize      = headtitlebannerimgitem[i].getAttribute('data-img-size');
+        headtitlebannerimgitem[i].style.backgroundPositionY = headtitlebannerimgitem[i].getAttribute('data-position-y');
+        headtitlebannerimgitem[i].style.backgroundPositionX = headtitlebannerimgitem[i].getAttribute('data-position-x');
+        headtitlebannerimgitem[i].style.height              = headtitlebannerimgitem[i].getAttribute('data-cont-height') + "px";
+    }
+});
+/* HeadTitle Content Image */
+
 /* Head Home Slider */
 $('.headsliderowl').owlCarousel({
     loop: true,
