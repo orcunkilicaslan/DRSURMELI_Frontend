@@ -5,4 +5,12 @@
     background-color: $var-custom-body-bg;
     padding: 60px 0;
   }
+
+  &-bgwhite{
+    background-color: $var-custom-body-bg;
+  }
+
+  &-bgblue{
+    background-color: $site-section-bgclr-blue;
+  }
 }

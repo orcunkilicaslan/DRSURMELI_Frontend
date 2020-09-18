@@ -11,54 +11,42 @@
     h4{font-size: 24px;}
     h5{font-size: 20px;}
     h6{font-size: 18px;}
-    h1+p,h2+p,h3+p,h1+ul,h2+ul,h3+ul{margin-top: 10px;} h4+p,h5+p,h6+p,h4+ul,h5+ul,h6+ul{margin-top: 5px;}
-    p+h1,p+h2,p+h3,p+h4,ul+h1,ul+h2,ul+h3,ul+h4{margin-top: 30px;} p+h5,p+h6,ul+h5,ul+h6{margin-top: 15px;}
+    h1+p,h2+p,h3+p,h1+ul,h2+ul,h3+ul,h1+ol,h2+ol,h3+ol{margin-top: 10px;} h4+p,h5+p,h6+p,h4+ul,h5+ul,h6+ul,h4+ol,h5+ol,h6+ol{margin-top: 5px;}
+    p+h1,p+h2,p+h3,p+h4,ul+h1,ul+h2,ul+h3,ul+h4,ol+h1,ol+h2,ol+h3,ol+h4{margin-top: 30px;} p+h5,p+h6,ul+h5,ul+h6,ol+h5,ol+h6{margin-top: 15px;}
 
-    p+p,p+ul,p+ol,ul+p,ol+p{margin-top: 1rem;}
+    p+p,p+ul,p+ol,ul+p,ol+p,ul+ul,ul+ol,ol+ul,ol+ol{margin-top: 1rem;}
     p, ul, ol{font-size: 1.25rem; font-weight: normal;}
     ul > li, ol > li{/*margin-bottom: 15px;*/}
     ul > li:last-child, ol > li:last-child{margin-bottom: 0;}
-    p a, li a{color: $global-clr-green; font-weight: 500;}
+    p a, li a{color: $global-clr-soft-blue; font-weight: $var-custom-font-weight-bold;}
 
+    iframe{margin: 30px 0;}
+    iframe[src*="youtube.com"]{height: 750px;}
 
-    ul.ullist{
+    ul, ol{
+      margin-left: 1.5rem;
 
-      li{
+      > li{
         position: relative;
-        padding-left: 15px;
+        padding-left: 20px;
 
         &::before{
           content: "";
+          background-color: $global-clr-soft-blue;
+          width: 8px;
+          height: 8px;
           position: absolute;
           background-repeat: no-repeat;
           background-position: center center;
           background-size: contain;
+          top: 10px;
           left: 0;
+          @include border-radius(50%);
         }
       }
 
-      p{
+      > p{
         padding-left: 15px;
-      }
-
-      &-dotted{
-        li{
-          &::before{
-            width: 8px;
-            height: 8px;
-            background-color: $global-clr-green;
-            top: 8px;
-            left: 0;
-            @include border-radius(50%);
-
-            @include BootstrapMaxWidthResponsive(1k){
-              top: 6px;
-            }
-            @include BootstrapMaxWidthResponsive(lg){
-              top: 5px;
-            }
-          }
-        }
       }
     }
 
