@@ -20,6 +20,16 @@ $(document).ready(function() {
 /* HeadTitle Content Image */
 
 /* Head Home Slider */
+$(document).ready(function() {
+    var headsliderbgimgitem = document.querySelectorAll(".headsliderbgimg");
+    for (var i = 0; i < headsliderbgimgitem.length; i++) {
+        headsliderbgimgitem[i].style.backgroundImage     = "url('" + headsliderbgimgitem[i].getAttribute('data-img-url') + "')";
+        headsliderbgimgitem[i].style.backgroundSize      = headsliderbgimgitem[i].getAttribute('data-img-size');
+        headsliderbgimgitem[i].style.backgroundPositionY = headsliderbgimgitem[i].getAttribute('data-position-y');
+        headsliderbgimgitem[i].style.backgroundPositionX = headsliderbgimgitem[i].getAttribute('data-position-x');
+    }
+});
+
 $('.headsliderowl').owlCarousel({
     loop: true,
     nav: false,
@@ -30,7 +40,7 @@ $('.headsliderowl').owlCarousel({
     items: 1,
     margin: 0,
     autoWidth: false,
-    mouseDrag: true,
+    mouseDrag: false,
     responsiveClass: true,
     responsive:{
         0:{},

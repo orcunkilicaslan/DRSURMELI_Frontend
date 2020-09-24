@@ -1,0 +1,52 @@
+
+.contactus{
+
+  &-content{
+    margin-top: 40px;
+  }
+
+  &-social{
+    @include flexbox-display-flex();
+    @include flexbox-justify-content(center);
+    margin-top: 40px;
+
+    li{
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    a{
+      width: 24px;
+      height: 24px;
+      display: block;
+      @include scale(1.4);
+
+      i[class*="icons-sprite"]{
+        //@include svg-filter(0%, 1, 0, 100%);
+      }
+    }
+  }
+
+  &-formarea{
+    background-color: $var-custom-body-bg;
+    padding: 50px;
+    margin-top: 50px;
+
+    .sitetitle-xl{
+      padding-bottom: 30px;
+    }
+
+    .contactform{
+      background-color: $var-custom-body-bg;
+      max-width: 1000px;
+      margin: auto;
+      padding: 50px;
+      border: 1px solid $global-border-light-gray;
+
+      .form-row{
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+}
