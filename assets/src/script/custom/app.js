@@ -140,3 +140,28 @@ $('.testimonialcommentowl').owlCarousel({
     }
 });
 /* Testimonial Comment Slider */
+
+/* Accordion */
+$(document).ready(function () {
+    $('.accitem .heading').on('click', function (e) {
+        e.preventDefault();
+
+        // Add the correct active class
+        if ($(this).closest('.accitem').hasClass('active')) {
+            // Remove active classes
+            $('.accitem').removeClass('active');
+        } else {
+            // Remove active classes
+            $('.accitem').removeClass('active');
+
+            // Add the active class
+            $(this).closest('.accitem').addClass('active');
+        }
+
+        // Show the content
+        var $content = $(this).next();
+        $content.slideToggle(100);
+        $('.accitem .content').not($content).slideUp('fast');
+    });
+});
+/* Accordion */
