@@ -2,16 +2,48 @@
 .beforeandafter{
 
   &-wrapper{
-
-
     .sitemap{
-
       &-box{
         margin-bottom: 30px;
 
         &:last-child{margin-bottom: 0;}
       }
+    }
+  }
 
+  &-dropdown{
+    text-align: center;
+    position: relative;
+    padding-bottom: 40px;
+
+    .btn,
+    .dropdown-menu{
+      min-width: 300px;
+    }
+
+    .dropdown-menu{
+      text-align: center;
+      top: 45px !important;
+      left: 50% !important;
+      transform: translateX(-50%) !important;
+      @include border-radius(6px);
+    }
+  }
+
+  &-gallerylist{
+    max-width: 900px;
+    margin: auto;
+    padding-bottom: 100px;
+
+    li{
+      margin: 20px 0;
+
+      &:first-child{margin-top: 0;}
+      &:last-child{margin-bottom: 0;}
+
+      img{
+        width: 100%;
+      }
     }
 
   }
