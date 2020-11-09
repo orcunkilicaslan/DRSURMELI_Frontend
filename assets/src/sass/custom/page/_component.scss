@@ -57,6 +57,97 @@
     }
   }
 
+  &-learnmore{
+    position: relative;
+
+    &::before{
+      content: "";
+      background-color: $global-clr-white;
+      width: 100%;
+      height: 40%;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .learnmore{
+      position: relative;
+
+      &-wrapper{
+        @include flexbox-display-flex();
+        @include flexbox-justify-content(space-between);
+        //@include flexbox-align-items(center);
+        position: relative;
+        z-index: 1;
+      }
+
+      &-image{
+        @include flexbox-flex(0 0 auto);
+        width: 30%;
+        max-width: 100%;
+      }
+
+      &-content{
+        @include flexbox-display-flex();
+        @include flexbox-flex-flow(column);
+        @include flexbox-flex-basis(0);
+        @include flexbox-flex-grow(1);
+        min-width: 0;
+        max-width: 100%;
+        padding: 0 50px;
+        text-align: center;
+
+        &-logos{
+          @include flexbox-display-flex();
+          @include flexbox-align-items(flex-end);
+          height: 40%;
+
+          .logos{
+            @include flexbox-display-flex();
+            @include flexbox-flex-wrap(wrap);
+            padding-bottom: 40px;
+
+            li{
+              @include flexbox-flex-basis(0);
+              @include flexbox-flex-grow(1);
+              min-width: 0;
+              max-width: 100%;
+            }
+
+            &-logo{
+              padding: 5px;
+              @include svg-filter(100%, 0, 0, 100%, 100%, 100%);
+            }
+          }
+        }
+
+        &-text{
+          @include flexbox-display-flex();
+          @include flexbox-flex-flow(column);
+          @include flexbox-flex(1);
+          @include flexbox-justify-content(center);
+
+          p{
+            color: $global-clr-white;
+            font-size: 2.5rem;
+            line-height: 1.2;
+            letter-spacing: 2px;
+          }
+
+          a{
+            color: $global-clr-white;
+            font-size: 5rem;
+            font-weight: 500;
+            letter-spacing: 5px;
+            margin-top: 10px;
+          }
+        }
+      }
+
+    }
+
+  }
+
   &-testimonial{
     background-color: $var-custom-body-bg;
     padding: 100px 0;
