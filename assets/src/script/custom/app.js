@@ -165,3 +165,13 @@ $(document).ready(function () {
     });
 });
 /* Accordion */
+
+/* Gallery Thumbnails */
+$(document).ready(function() {
+
+    $('[data-ride="carousel"]').carousel({
+        interval: 5000
+    });
+
+});
+/* Gallery Thumbnails */

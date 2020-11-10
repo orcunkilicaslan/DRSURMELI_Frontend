@@ -5,6 +5,7 @@
  - [Content_Page](https://orcunkilicaslan.github.io/DRSURMELI_Frontend/html/Content_Page.html)
  - [Before_And_After](https://orcunkilicaslan.github.io/DRSURMELI_Frontend/html/Before_And_After.html)
  - [Before_And_After_Content](https://orcunkilicaslan.github.io/DRSURMELI_Frontend/html/Before_And_After_Content.html)
+ - [Before_And_After_Gallery](https://orcunkilicaslan.github.io/DRSURMELI_Frontend/html/Before_And_After_Gallery.html)
  - [Contact_Us](https://orcunkilicaslan.github.io/DRSURMELI_Frontend/html/Contact_Us.html)
    
 

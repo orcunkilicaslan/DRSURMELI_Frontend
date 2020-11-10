@@ -1,7 +1,9 @@
 
 .beforeandafter{
 
-  &-wrapper{
+  &-wrapper{}
+
+  &-sitemap{
     .sitemap{
       &-box{
         margin-bottom: 30px;
@@ -11,39 +13,92 @@
     }
   }
 
-  &-dropdown{
-    text-align: center;
-    position: relative;
-    padding-bottom: 40px;
+  &-contlist{
 
-    .btn,
-    .dropdown-menu{
-      min-width: 300px;
-    }
-
-    .dropdown-menu{
+    &-dropdown{
       text-align: center;
-      top: 45px !important;
-      left: 50% !important;
-      transform: translateX(-50%) !important;
-      @include border-radius(6px);
+      position: relative;
+      padding-bottom: 40px;
+
+      .btn,
+      .dropdown-menu{
+        min-width: 300px;
+      }
+
+      .dropdown-menu{
+        text-align: center;
+        top: 45px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        @include border-radius(6px);
+      }
     }
+
+    &-list{
+      max-width: 900px;
+      margin: auto;
+      padding-bottom: 100px;
+
+      li{
+        margin: 20px 0;
+
+        &:first-child{margin-top: 0;}
+        &:last-child{margin-bottom: 0;}
+
+        img{
+          width: 100%;
+        }
+      }
+    }
+
   }
 
-  &-gallerylist{
-    max-width: 900px;
-    margin: auto;
-    padding-bottom: 100px;
+  &-gallerys{
 
-    li{
-      margin: 20px 0;
+    &-bigside{
+      @include flexbox-flex(0 0 71%);
 
-      &:first-child{margin-top: 0;}
-      &:last-child{margin-bottom: 0;}
+      .carousel-item{
+        background-color: $global-border-light-gray;
 
-      img{
-        width: 100%;
+        img{
+          width: 100%;
+          max-width: inherit;
+          height: 750px;
+        }
       }
+    }
+
+    &-listside{
+      @include flexbox-flex(0 0 29%);
+      padding-left: 0;
+
+      ul{
+        li{
+          padding-bottom: 15px;
+
+
+          &:last-child{padding-bottom: 0;}
+        }
+      }
+
+      .thumbnail{
+        background-color: $global-border-light-gray;
+        display: block;
+        cursor: pointer;
+
+        img{
+          width: 100%;
+          max-width: inherit;
+          height: 240px;
+        }
+      }
+    }
+
+    .sitecontent-desc{
+      margin-top: 30px;
+      margin-bottom: 20px;
+      p{font-size: 1.75rem;}
     }
 
   }
