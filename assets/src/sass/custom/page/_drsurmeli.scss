@@ -1,0 +1,24 @@
+
+.drsurmelipage{
+
+  &-diplomaslist{
+    margin-top: 15px;
+
+    .diplomaslist{
+      @include flexbox-display-flex();
+      @include flexbox-flex-wrap(wrap);
+      @include flexbox-justify-content(center);
+
+      li{
+        @include flexbox-flex(0 0 calc(100% / 2));
+        width: 100%;
+        max-width: 50%;
+        position: relative;
+        padding: 20px;
+      }
+
+    }
+
+  }
+
+}

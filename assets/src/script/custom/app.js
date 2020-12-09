@@ -15,6 +15,7 @@ $(document).ready(function() {
         headtitlebannerimgitem[i].style.backgroundPositionY = headtitlebannerimgitem[i].getAttribute('data-position-y');
         headtitlebannerimgitem[i].style.backgroundPositionX = headtitlebannerimgitem[i].getAttribute('data-position-x');
         headtitlebannerimgitem[i].style.height              = headtitlebannerimgitem[i].getAttribute('data-cont-height') + "px";
+        headtitlebannerimgitem[i].style.marginTop           = headtitlebannerimgitem[i].getAttribute('data-cont-margintop') + "px";
     }
 });
 /* HeadTitle Content Image */

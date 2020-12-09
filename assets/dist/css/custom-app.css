@@ -12832,7 +12832,7 @@ button:-moz-focusring,
     .headtitle .headcontent-image {
       -ms-flex: 0 0 auto;
       flex: 0 0 auto;
-      width: 40%;
+      width: 30%;
       max-width: 100%; }
       .headtitle .headcontent-image .headtitlebannerimg {
         background-color: transparent;
@@ -12840,7 +12840,7 @@ button:-moz-focusring,
         background-position: bottom center;
         background-size: contain;
         width: 100%;
-        height: 450px; }
+        min-height: 300px; }
     .headtitle .headcontent-title {
       -ms-flex-basis: 0;
       -ms-flex-preferred-size: 0;
@@ -12855,11 +12855,11 @@ button:-moz-focusring,
       text-align: center; }
       .headtitle .headcontent-title h1 {
         color: #FFFFFF;
-        font-size: 5rem;
+        font-size: 4rem;
         font-weight: 500;
         letter-spacing: 5px; }
       .headtitle .headcontent-title p {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         line-height: 1.2;
         letter-spacing: 2px;
         margin-top: 10px; }
@@ -13971,6 +13971,25 @@ button:-moz-focusring,
 
 .home-contactus {
   padding-top: 0; }
+
+.drsurmelipage-diplomaslist {
+  margin-top: 15px; }
+  .drsurmelipage-diplomaslist .diplomaslist {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .drsurmelipage-diplomaslist .diplomaslist li {
+      -ms-flex: 0 0 calc(100% / 2);
+      flex: 0 0 calc(100% / 2);
+      width: 100%;
+      max-width: 50%;
+      position: relative;
+      padding: 20px; }
 
 .pagecontent-section {
   background-color: #FFFFFF;
