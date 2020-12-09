@@ -13467,12 +13467,7 @@ button:-moz-focusring,
             min-width: 0;
             max-width: 100%; }
           .component-learnmore .learnmore-content-logos .logos-logo {
-            padding: 5px;
-            filter: brightness(100%) invert(0) hue-rotate(0deg) contrast(100%) grayscale(100%) opacity(100%);
-            -webkit-filter: brightness(100%) invert(0) hue-rotate(0deg) contrast(100%) grayscale(100%) opacity(100%);
-            -ms-filter: brightness(100%) invert(0) hue-rotate(0deg) contrast(100%) grayscale(100%) opacity(100%);
-            -o-filter: brightness(100%) invert(0) hue-rotate(0deg) contrast(100%) grayscale(100%) opacity(100%);
-            -moz-filter: brightness(100%) invert(0) hue-rotate(0deg) contrast(100%) grayscale(100%) opacity(100%); }
+            padding: 5px; }
       .component-learnmore .learnmore-content-text {
         display: -ms-flexbox;
         display: flex;
@@ -13907,12 +13902,7 @@ button:-moz-focusring,
           min-width: 0;
           max-width: 100%; }
         .home-doctornote .quotearea-logos .quotelogos-logo {
-          padding: 15px 40px;
-          filter: brightness(100%) invert(0) hue-rotate(0deg) contrast(100%) grayscale(100%) opacity(100%);
-          -webkit-filter: brightness(100%) invert(0) hue-rotate(0deg) contrast(100%) grayscale(100%) opacity(100%);
-          -ms-filter: brightness(100%) invert(0) hue-rotate(0deg) contrast(100%) grayscale(100%) opacity(100%);
-          -o-filter: brightness(100%) invert(0) hue-rotate(0deg) contrast(100%) grayscale(100%) opacity(100%);
-          -moz-filter: brightness(100%) invert(0) hue-rotate(0deg) contrast(100%) grayscale(100%) opacity(100%); }
+          padding: 15px 40px; }
       .home-doctornote .quotearea-logos .sitecontent-desc {
         width: 470px;
         text-align: center;

@@ -179,7 +179,7 @@
 
           &-logo{
             padding: 15px 40px;
-            @include svg-filter(100%, 0, 0, 100%, 100%, 100%);
+            //@include svg-filter(100%, 0, 0, 100%, 100%, 100%);
           }
         }
 
