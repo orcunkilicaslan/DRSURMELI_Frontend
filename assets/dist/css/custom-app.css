@@ -5116,6 +5116,16 @@ input[type="button"].btn-block {
       -webkit-animation: none;
               animation: none; } }
 
+.media {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+      align-items: flex-start; }
+
+.media-body {
+  -ms-flex: 1;
+      flex: 1; }
+
 .close {
   float: right;
   font-size: 1.5rem;
@@ -13493,6 +13503,38 @@ button:-moz-focusring,
     padding-bottom: 30px; }
   .component-testimonial .testimonialcomment {
     padding-bottom: 40px; }
+    .component-testimonial .testimonialcomment-box .media-avatar {
+      margin-right: 1.25rem; }
+      .component-testimonial .testimonialcomment-box .media-avatar > span.avatartext {
+        display: -ms-flexbox;
+        display: flex;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        color: #FFFFFF;
+        background-color: #758ca3;
+        width: 64px;
+        height: 64px;
+        text-align: center;
+        border-radius: 50%;
+        -o-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -khtml-border-radius: 50%; }
+    .component-testimonial .testimonialcomment-box .media-body {
+      font-size: 1.1rem; }
+      .component-testimonial .testimonialcomment-box .media-body-title {
+        font-size: 1.25rem; }
+      .component-testimonial .testimonialcomment-box .media-body-date {
+        display: block; }
+      .component-testimonial .testimonialcomment-box .media-body p {
+        margin-top: 0.5rem; }
   .component-testimonial .testimonialcommentowl {
     max-width: 800px;
     margin: auto; }

@@ -118,15 +118,38 @@ $('.beforeaftergalleryowl').owlCarousel({
 /* Before and After Gallery  */
 
 /* Testimonial Comment Slider */
+function testimonialRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+function testimonialUserAvatar() {
+
+    var testUserName = $('.owl-item.active .media-body-title').text();
+    var testUserAvat = testUserName.charAt(0);
+    var testAvatar = $('.owl-item.active .media-avatar .avatartext');
+
+    testAvatar.text(testUserAvat);
+    testAvatar.css("background-color", testimonialRandomColor());
+}
+
 $('.testimonialcommentowl').owlCarousel({
     loop: true,
     nav: true,
     dots: false,
     autoplay: true,
-    autoplayTimeout: 5000,
+    autoplayTimeout: 10000,
     autoplayHoverPause: false,
     items: 1,
     margin: 0,
+    onInitialize : testimonialUserAvatar,
+    onInitialized : testimonialUserAvatar,
+    onTranslate : testimonialUserAvatar,
+    onTranslated : testimonialUserAvatar,
     autoWidth: false,
     mouseDrag: true,
     responsiveClass: true,

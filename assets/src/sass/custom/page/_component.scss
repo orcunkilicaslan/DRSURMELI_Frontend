@@ -158,6 +158,43 @@
 
     .testimonialcomment{
       padding-bottom: 40px;
+
+      &-box{
+
+        .media{
+
+          &-avatar{
+            margin-right: 1.25rem;
+
+            > span.avatartext{
+              @include flexbox-display-flex();
+              @include flexbox-align-items(center);
+              @include flexbox-justify-content(center);
+              color: $global-clr-white;
+              background-color: $global-clr-soft-gray;
+              width: 64px;
+              height: 64px;
+              text-align: center;
+              @include border-radius(50%);
+            }
+          }
+
+          &-body{
+            font-size: 1.1rem;
+
+            &-title{
+              font-size: 1.25rem;
+            }
+
+            &-date{
+              display: block;
+            }
+
+            p{margin-top: 0.5rem}
+          }
+        }
+
+      }
     }
 
     .testimonialcommentowl{
